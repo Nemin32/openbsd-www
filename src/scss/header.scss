@@ -1,6 +1,10 @@
 body > header {
-  width: calc(100%);
-  height: 40px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  max-height: 40px;
   background: #222;
   color: white;
 
@@ -10,6 +14,7 @@ body > header {
   #logo_link {
     color: white;
     padding: 0.2rem;
+    height: 40px;
 
     #logo {
       display: flex;
@@ -31,49 +36,50 @@ body > header {
   }
 
   nav {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(5, 25%);
 
-    div {
+    header, ul li {
+      transition: background 0.25s;
+    }
+
+    header:hover, ul li:hover {
+      background: #444;
+    }
+
+    header {
+      height: 40px;
+      padding: 0 0.3rem;
+
       display: flex;
       align-items: center;
-      height: 40px;
-      margin-right: 1rem;
-      position: relative;
+      font-weight: bold;
+    }
 
-      padding-left: 1rem;
-      padding-right: 1rem;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
 
-      header {
-        margin: 0;
-      }
+      li {
+        padding: 0.6rem;
 
-      ul {
-        position: absolute;
-        top: 40px;
-        left: 0;
-        display: none;
-
-        margin: 0;
-        padding: 0;
-        width: calc(100%);
-
-        list-style-type: none;
-
-        li {padding: 0.5rem 0.5rem;}
-        li:hover {background: #444;}
-
-        background: #111;
-        a {color: white;}
+        a {
+          text-decoration: none;
+          color: white;
+          font-weight: normal;
+        }
       }
     }
 
-    div:hover {
-      background: #444;
-
-      ul {
-        display: block;
-      }
-    }
+    padding-bottom: 1rem;
   }
+
+  transition: max-height 0.5s;
+
+  overflow: hidden;
+}
+
+body > header:hover {
+  max-height: 450px;
 }
