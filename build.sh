@@ -1,5 +1,8 @@
 #!/bin/sh
 
+mkdir build &>/dev/null
+mkdir build/css &>/dev/null
+
 cp -r src/images build/images
 
 for f in src/*.html
