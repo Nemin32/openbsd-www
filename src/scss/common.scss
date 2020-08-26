@@ -23,23 +23,31 @@ a {
 main {
     background: #f2f2f2;
 
+    padding: 2rem 0;
+
     a {
         color: #2030aa;
         color: #3090bb;
     }
 
     & > * {
-        padding-left: 15%;
-        padding-right: 15%;
+        /*padding-left: 15%;
+        padding-right: 15%;*/
+        width: 840px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
     }
 }
 
 h1,h2,h3,h4 {
-  //color: #882323;
-color: #a03030;
+  color: #a03030;
 }
 
 #OpenBSD {
   margin-top: 0;
-  padding-top: 1em;
 }
