@@ -3,7 +3,7 @@
 mkdir build &>/dev/null
 mkdir build/css &>/dev/null
 
-cp -r src/images build/images
+cp -r src/images build/
 
 for f in src/*.html
 do

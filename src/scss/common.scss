@@ -17,6 +17,9 @@ body {
     margin: 0 auto;
 
     position: relative;
+
+    display: grid;
+    grid-template-columns: 280px auto;
 }
 
 a {
@@ -27,7 +30,7 @@ a {
 main {
     background: #f2f2f2;
 
-    padding: 4rem 0;
+    //padding: 4rem 0;
 
     a {
         color: #2030aa;
@@ -53,5 +56,4 @@ h1,h2,h3,h4 {
 }
 
 #OpenBSD {
-  margin-top: 0;
 }

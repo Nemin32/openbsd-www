@@ -10,28 +10,19 @@ include(header.template)dnl
 
     <main>
       <div id="banner">
-        <img src="images/logo.gif" alt="OpenBSD Logo">
-        <div id="text">
-          <div id="release">
-            <h1>OpenBSD 6.7</h1>
-            <span id="callout">-- Only two remote holes in the default install, in a heck of a long time!</span>
-          </div>
-          <p>(May 19, 2020)</p>
-          <p id="description">The OpenBSD project produces a <strong>FREE</strong>, multi-platform 4.4BSD-based UNIX-like operating system.</p>
+          <img alt="OpenBSD 6.7" src="images/puffy67.gif">
           <div id="links">
             <span><a href="#">Download</a></span>
             <span><a href="goals.html">Learn More</a></span>
-            <span><a href="faq.html">FAQ</a></span>
           </div>
-        </div>
       </div>
 
       <div id="content">
         <div>
-          <h2>Read more about the current release</h2>
-          <img src="images/puffy67.gif">
-        </div>
-        <div>
+        <!--  <h2>Read more about the current release</h2>
+          <img src="images/puffy67.gif">-->
+            <p id="callout">Only two remote holes in the default install, in a heck of a long time!</p>
+            <p id="description">The OpenBSD project produces a <strong>FREE</strong>, multi-platform 4.4BSD-based UNIX-like operating system.</p>
           <p>
           Our efforts emphasize portability, standardization,
           correctness, <a href="security.html">proactive security</a> and
@@ -39,6 +30,16 @@ include(header.template)dnl
           has, the popular <a href="https://www.openssh.com">OpenSSH</a> software comes from
           OpenBSD.</p>
 
+          <h4>OpenBSD community sites</h4>
+
+          <ul>
+            <li><a href="mail.html">Mailing lists</a></li>
+            <li><a href="https://www.undeadly.org/cgi?action=front">Undeadly - The OpenBSD Journal</a></li>
+            <li><a href="https://twitter.com/openbsd">OpenBSD's official Twitter</a></li>
+            <li><a href="https://reddit.com/r/openbsd">Reddit</a></li>
+          </ul>
+        </div>
+        <div>
           <p>
           OpenBSD is freely available from our download sites.</p>
 
@@ -53,21 +54,27 @@ include(header.template)dnl
           <a href="https://www.openbsdfoundation.org">The OpenBSD Foundation</a>.
           Contributions ensure that OpenBSD will remain a vibrant and
           <a href="policy.html">free</a> operating system.</p>
+
+          <div id="rack">
+            <img src="images/rack2009-s.png" id="rack">
+            <p>The server rack in 2009.</p>
+          </div>
+            
         </div>
       </div>
+      <footer>
+        <p>Associated projects:</p>
+        <aside>
+          <a href="https://www.openssh.com">OpenSSH</a>
+          <a href="http://www.openbgpd.org">OpenBGPD</a>
+          <a href="https://www.rpki-client.org">rpki-client</a>
+          <a href="http://www.openntpd.org">OpenNTPD</a>
+          <a href="https://www.opensmtpd.org">OpenSMTPD</a>
+          <a href="openiked/index.html">OpenIKED</a>
+          <a href="https://mandoc.bsd.lv">mandoc</a>
+          <a href="https://www.libressl.org">LibreSSL</a>
+        </aside>
+      </footer>
     </main>
-    <footer>
-      <span>Associated projects:</span>
-      <aside>
-        <a href="https://www.openssh.com">OpenSSH</a>
-        <a href="http://www.openbgpd.org">OpenBGPD</a>
-        <a href="https://www.rpki-client.org">rpki-client</a>
-        <a href="http://www.openntpd.org">OpenNTPD</a>
-        <a href="https://www.opensmtpd.org">OpenSMTPD</a>
-        <a href="openiked/index.html">OpenIKED</a>
-        <a href="https://mandoc.bsd.lv">mandoc</a>
-        <a href="https://www.libressl.org">LibreSSL</a>
-      </aside>
-    </footer>
   </body>
 </html>

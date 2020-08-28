@@ -1,28 +1,25 @@
 body > header {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  max-height: 40px;
   background: #222;
   color: white;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
   #logo_link {
     color: white;
-    padding: 0.2rem;
-    height: 40px;
+    padding: 0.6rem 0.3rem;
+    background: #6bbdd6;
+
+    -webkit-text-stroke: 1px black;
+    font-family: "DejaVu Serif", serif;
 
     #logo {
       display: flex;
+      justify-content: center;
       align-items: center;
-      margin-right: 3rem;
 
       img {
-        width: 40px;
+        height: 50px;
         display: block;
         margin-right: 0.5rem;
       }
@@ -30,14 +27,16 @@ body > header {
 
     #title {
       margin: 0;
-      font-size: 1.2rem;
+      font-size: 2.2rem;
       font-weight: bold;
     }
   }
 
   nav {
-    display: grid;
-    grid-template-columns: repeat(5, 25%);
+    //display: grid;
+    //grid-template-columns: repeat(5, 25%);
+
+    margin: 0.5rem 0.2rem;
 
     header, ul li {
       transition: background 0.25s;
@@ -57,12 +56,13 @@ body > header {
     }
 
     ul {
-      list-style-type: none;
-      padding: 0;
+      //list-style-type: none;
+      padding-left: 40px;
       margin: 0;
 
       li {
-        padding: 0.6rem;
+        padding: 0.2rem;
+        //padding-left: 2rem;
 
         a {
           text-decoration: none;
@@ -72,14 +72,6 @@ body > header {
       }
     }
 
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
   }
-
-  transition: max-height 0.5s;
-
-  overflow: hidden;
-}
-
-body > header:hover {
-  max-height: 450px;
 }

@@ -1,22 +1,24 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 #banner {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
-  background: #6BBDD6;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  flex-shrink: 0;
 
+  padding: 1rem 0;
   margin: 0;
-  margin-top: -2rem;
   width: 100%;
 }
 
 #banner img {
-  height: 300px;
-  width: auto;
-  margin-right: 1rem;
+  max-width: 600px;
   flex-shrink: 0;
+  margin-bottom: 1rem;
 }
 
 #banner h1 {
@@ -27,22 +29,9 @@
   font-weight: 900;
 }
 
-#banner #callout {
-  font-style: italic;
-  margin-left: 0.5rem;
-}
-
-#banner #release {
-  display: flex;
-  align-items: center;
-}
-
-#banner #text {
-  display:flex;
-  justify-content: center;
-  flex-direction: column;
-
-  height: 300px;
+#callout {
+  font-weight: bold;
+  color: #a03030;
 }
 
 #banner #links span a {
@@ -54,26 +43,35 @@
   text-decoration: none;
   font-weight: bold;
 
+  font-size: 1.4rem;
+
   color: white;
   background: #222;
 }
 
 #content {
   display: grid;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 50% 50%;
+  grid-gap: 3rem;
 
   padding-top: 1rem;
   padding-bottom: 4rem;
 
-  width: 1200px;
-}
+  width: 1300px;
 
-#content img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  flex-basis: 100%;
 
-  max-width: 600px;
+  #rack {
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      img {
+          height: 240px;
+          width: auto;
+      }
+  }
 }
 
 #content h2 {
@@ -85,6 +83,14 @@ footer {
   padding: 1rem;
   background: #111;
 
+  //position: absolute;
+  bottom: 0;
+  width: calc(100% - 2rem);
+
+  p {
+      margin-top: 0;
+  }
+      
   aside {
     a {
       color: white;

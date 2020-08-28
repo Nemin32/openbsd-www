@@ -1,8 +1,8 @@
     <header>
-      <a id="logo_link" href="/index.html">
+      <a id="logo_link" href="index.html">
       <div id="logo">
         <img src="images/logo.gif">
-        <p id="title">OpenBSD</p>
+        <p id="title"><span style="color: #fac607; font-style: italic;">Open</span><span style="color: #aa0000;">BSD</span></p>
       </div>
       </a>
     <nav>
