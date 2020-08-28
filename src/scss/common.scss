@@ -11,26 +11,25 @@ html, body {
 }
 
 body {
-    //width: clamp(1300px, 100%, 1920px);
     min-width: 1300px;
     width: 100%;
     margin: 0 auto;
 
-    position: relative;
-
     display: grid;
     grid-template-columns: 280px auto;
-}
 
-a {
-    font-weight: bold;
-    text-decoration: none;
+    a {
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    h1,h2,h3,h4 {
+        color: #a03030;
+    }
 }
 
 main {
     background: #f2f2f2;
-
-    //padding: 4rem 0;
 
     a {
         color: #2030aa;
@@ -38,8 +37,6 @@ main {
     }
 
     & > * {
-        /*padding-left: 15%;
-        padding-right: 15%;*/
         width: 840px;
         margin-left: auto;
         margin-right: auto;
@@ -49,11 +46,4 @@ main {
       max-width: 100%;
       height: auto;
     }
-}
-
-h1,h2,h3,h4 {
-  color: #a03030;
-}
-
-#OpenBSD {
 }
