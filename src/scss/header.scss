@@ -36,13 +36,14 @@ body > header {
     padding-left: 0.5rem;
     padding-bottom: 0.5rem;
 
-    header, ul li {
+    ul li {
       transition: background 0.25s;
+
+      &:hover {
+        background: #444;
+      }
     }
 
-    header:hover, ul li:hover {
-      background: #444;
-    }
 
     header {
       font-weight: bold;
@@ -52,6 +53,7 @@ body > header {
     ul {
       padding-left: 40px;
       margin: 0;
+      margin-top: 0.5rem;
 
       li {
         padding: 0.2rem;

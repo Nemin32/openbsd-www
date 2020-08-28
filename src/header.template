@@ -1,7 +1,7 @@
     <header>
       <a id="logo_link" href="index.html">
       <div id="logo">
-        <img src="images/logo.gif">
+        <img alt="OpenBSD Pufferfish" src="images/logo.png">
         <p id="title"><span style="color: #fac607; font-style: italic;">Open</span><span style="color: #aa0000;">BSD</span></p>
       </div>
       </a>
