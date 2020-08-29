@@ -86,16 +86,19 @@ footer {
 }
 
 @media(orientation: portrait) {
-  body > header {
-    height: unset;
-    flex-direction: column;
-
-    nav {
-      flex-direction: column;
-
-      div {
-        position: static;
-      }
+    footer aside {
+        grid-template-columns: repeat(2, auto);
     }
-  }
+
+    main > div .content {
+        display: block;
+    }
+
+    #banner {
+        margin: 0 auto;
+
+        img {
+            max-width: 100%;
+        }
+    }
 }

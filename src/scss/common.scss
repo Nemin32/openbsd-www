@@ -48,3 +48,25 @@ main {
       height: auto;
     }
 }
+
+@media(orientation: portrait) {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-width: unset;
+        width: 100%;
+    }
+    
+    main {
+        width: 100%;
+        & > * {
+            width: unset;
+            max-width: 95%;
+        }
+
+        ul {
+            width: 90%;
+            padding-left: 20px;
+        }
+    }
+}
